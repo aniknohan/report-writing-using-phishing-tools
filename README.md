@@ -304,3 +304,9 @@ This repository demonstrates practical ability in:
 ## Disclaimer
 
 This repository is for defensive cybersecurity education, portfolio demonstration, and authorized analysis only. Never submit confidential organizational data to public third-party services without permission.
+
+## Author
+
+**Anik Nohan**
+
+Cybersecurity | SOC Analysis | Blue Team | Report Writing
