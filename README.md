@@ -305,8 +305,34 @@ This repository demonstrates practical ability in:
 
 This repository is for defensive cybersecurity education, portfolio demonstration, and authorized analysis only. Never submit confidential organizational data to public third-party services without permission.
 
+---
+
 ## Author
 
 **Anik Nohan**
 
-Cybersecurity | SOC Analysis | Blue Team | Report Writing
+This hands-on Report Writing Using Phishing Tools project was completed to demonstrate practical skills in:
+
+- Phishing email triage and investigation
+- URL and domain analysis
+- Indicator of Compromise (IOC) analysis
+- File and attachment reputation analysis
+- Phishing infrastructure investigation
+- Passive threat-intelligence research
+- Sandbox and behavioral analysis
+- Webpage and redirect analysis
+- WHOIS and domain-registration analysis
+- Artifact decoding and deobfuscation
+- Evidence collection and preservation
+- Malicious indicator sanitization
+- Evidence-strength assessment
+- Multi-source finding correlation
+- Phishing incident report writing
+- Defensive recommendation development
+- SOC investigation documentation and communication
+
+### Tools & Platforms
+
+`VirusTotal` • `urlscan.io` • `URLhaus` • `PhishTank` • `Cisco Talos` • `Hybrid Analysis` • `URL2PNG` • `Wannabrowser` • `WHOIS / ICANN Lookup` • `CyberChef` • `GitHub`
+
+---
