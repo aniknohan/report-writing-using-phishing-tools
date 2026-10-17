@@ -1,6 +1,6 @@
 # Sample Phishing Investigation Report
 
-> This is a portfolio example based on sanitized training data. Replace the placeholders and add your own screenshots before publishing.
+> This is a portfolio example based on sanitized training data. Figures 1–7 below refer to the evidence screenshots listed in [`screenshots/README.md`](../screenshots/README.md).
 
 ## 1. Executive Summary
 

@@ -1,8 +1,10 @@
 # Screenshot Guide
 
-Place screenshots in this folder using numbered names.
+Place screenshots in the [`screenshots/`](../screenshots/) folder using numbered names.
 
-Recommended naming convention:
+The sample case uses its own seven-file set (Figures 1–7), listed in [`screenshots/README.md`](../screenshots/README.md). Use the convention below for new investigations.
+
+Recommended naming convention for a full investigation:
 
 ```text
 01-original-email.png

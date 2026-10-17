@@ -13,6 +13,8 @@ The repository contains a step-by-step investigation workflow, a tool reference,
 
 > **Sample case at a glance:** an email posing as an Outlook security alert ("Your Email Will be Locked! Act NOW!") was sent from Gmail infrastructure to five recipients and linked to a fake Outlook login page on `emailsecalerts[.]net`. Verdict: **Credential Phishing, Medium severity**, with **no user interaction** found in the reviewed email gateway, SIEM and EDR telemetry.
 
+![Sample case overview](assets/diagrams/sample-case-overview.svg)
+
 ## Why I Did This
 
 Running a URL through VirusTotal takes seconds. Writing a report that a manager can act on, and that still holds up when someone asks *"how do you know?"*, is the harder skill. Most phishing write-ups I saw either dumped tool output or jumped straight to "this is malicious". I wanted to practise the full analyst loop: collect artifacts without touching live infrastructure, check them against several independent sources, separate strong evidence from supporting evidence, avoid overclaiming what any single tool proves, and finish with recommendations tied to the evidence.
@@ -27,6 +29,18 @@ Running a URL through VirusTotal takes seconds. Writing a report that a manager 
 - **Reusable report template:** 17 sections from executive summary to evidence index, limitations and conclusion.
 - **Findings-language cheat sheet:** ready-to-adapt sentences for reputation, webpage, WHOIS, sandbox, CyberChef and telemetry findings.
 - **Complete sample report:** a credential-phishing case written in full, including IOCs, defensive measures and stated limitations.
+
+## Lab Visuals
+
+| Evidence strength model | User-interaction scoping |
+|---|---|
+| ![Evidence strength model](assets/diagrams/evidence-strength.svg) | ![User-interaction scoping](assets/diagrams/user-interaction-scoping.svg) |
+
+| Report template anatomy |
+|---|
+| ![Report template anatomy](assets/diagrams/report-anatomy.svg) |
+
+Diagrams are built from the sample report and project docs. Evidence screenshots for the sample case go in [`screenshots/`](screenshots/README.md), which lists the seven figures the report expects.
 
 ## Sample Case Findings
 
@@ -133,8 +147,11 @@ report-writing-using-phishing-tools/
 │   └── findings-language-cheatsheet.md      # reusable finding sentences
 ├── sample-report/
 │   └── sample-phishing-report.md        # full credential-phishing case report
-├── screenshots/                         # evidence screenshots (numbered)
-└── assets/                              # diagrams and non-evidence graphics
+├── screenshots/
+│   └── README.md                        # the 7 evidence figures the sample report expects
+└── assets/
+    ├── README.md
+    └── diagrams/                        # lab visuals used in this README (SVG)
 ```
 
 ## Project Documentation
@@ -169,7 +186,7 @@ report-writing-using-phishing-tools/
 
 ## Roadmap
 
-- Add sanitized evidence screenshots for each phase of the sample case (VirusTotal, urlscan.io, WHOIS, gateway, SIEM, EDR)
+- Add the seven sanitized evidence screenshots for the sample case (listed in [`screenshots/README.md`](screenshots/README.md))
 - Add an email-header analysis walkthrough (SPF, DKIM, DMARC, Received chain)
 - Add a second worked case covering a malicious attachment with Hybrid Analysis
 - Map sample-case activity to MITRE ATT&CK (T1566 Phishing)
